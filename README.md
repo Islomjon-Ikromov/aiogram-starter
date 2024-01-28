@@ -36,7 +36,7 @@
 
 1. Clone the repository from GitHub.
     ```
-    https://github.com/Islomjon-Ikromov/aiogram-starter.git
+    git clone https://github.com/Islomjon-Ikromov/aiogram-starter.git
     ```
 
 2. Enter the cloned project folder.
