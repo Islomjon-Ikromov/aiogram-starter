@@ -13,7 +13,7 @@ from bot.db import database, models
 scheduler = AsyncIOScheduler()
 
 dp = Dispatcher()
-worker_bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
 
 router = Router()
 i18n = I18n(path=LOCALES_DIR, default_locale="uz", domain=I18N_DOMAIN)
@@ -30,7 +30,7 @@ async def set_commands(lang: str):
     commands = [
         BotCommand(command="/start", description=f"♻️ {_('start_text', locale=lang)}"),
     ]
-    await worker_bot.set_my_commands(commands)
+    await bot.set_my_commands(commands)
 
 
 def register_commands():
@@ -86,4 +86,4 @@ async def main() -> None:
     # set_schedules()
 
     # run bot as polling
-    await dp.start_polling(worker_bot)
+    await dp.start_polling(bot)
