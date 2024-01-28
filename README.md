@@ -1,4 +1,4 @@
-## FastAPI Starter Project
+## Aiogram3 Starter Project
 
 ```
 ├── bot
