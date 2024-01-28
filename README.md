@@ -4,7 +4,6 @@
 ├── bot
 │   ├── commands
 │   │   ├── start.py
-│   │   └── utils.py
 │   ├── db
 │   │   ├── database.py
 │   │   └── models.py
