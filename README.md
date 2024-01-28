@@ -47,11 +47,11 @@
 3. Create a virtual environment using Python's `venv` module:
 
     ```
-    python -m venv .venv
+    python -m venv ./venv
     ```
     or
     ```
-    python3 -m venv .venv
+    python3 -m venv ./venv
     ```
 
 4. Activate the virtual environment:
@@ -74,8 +74,6 @@
     pip install -r requirements.txt
     ```
 
-5. Create a database using pgadmin. ex: `fastapi_starter`
-
 6. Update `config.py` file with your own values.
     ```
     BOT_TOKEN = ""
@@ -89,20 +87,7 @@
     DATABASE_NAME = ""
     ```
 
-
-
-
-7. Set up the database using alembic by running the following command:
-    - makemigrations
-        ```
-        alembic revision --autogenerate -m "initial"
-        ```
-    - migrate
-        ```
-        alembic upgrade head
-        ```
-
-8. Start the server:
+7. Start the bot:
 
     ```
     python3 run.py | python run.py
