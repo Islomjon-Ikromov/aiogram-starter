@@ -60,7 +60,7 @@
     - For Windows:
 
         ```
-        ..\.venv\Scripts\activate.ps1
+        ..\venv\Scripts\activate.ps1
         ```
 
     - For Linux or macOS:
