@@ -40,19 +40,17 @@ def register_commands():
 
 
 # def set_schedules():
+#     scheduler.add_job(function_name, 'interval', minutes=10)
 #     scheduler.start()
 
 class DatabaseHandler(logging.Handler):
-
     def __init__(self):
         super().__init__()
 
     def emit(self, record):
         from bot.db import GetDB
-
         level = record.levelname
         message = self.format(record)
-
         try:
             with GetDB() as db:
                 db_log = models.Log(
@@ -61,7 +59,6 @@ class DatabaseHandler(logging.Handler):
                 )
                 db.add(db_log)
                 db.commit()
-
         except Exception as e:
             print(f"Error writing log to database: {e}")
 
