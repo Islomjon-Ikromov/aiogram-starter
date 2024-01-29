@@ -6,6 +6,7 @@
 │   │   ├── start.py
 │   ├── db
 │   │   ├── database.py
+│   │   ├── users_crud.py
 │   │   └── models.py
 │   ├── inline_handlers
 │   │   └── serach.py
@@ -38,12 +39,7 @@
     git clone https://github.com/Islomjon-Ikromov/aiogram-starter.git
     ```
 
-2. Enter the cloned project folder.
-    ```
-    cd aiogram-starter
-    ```
-
-3. Create a virtual environment using Python's `venv` module:
+2. Create a virtual environment using Python's `venv` module:
 
     ```
     python -m venv ./venv
@@ -52,6 +48,12 @@
     ```
     python3 -m venv ./venv
     ```
+   
+3. Enter the cloned project folder.
+    ```
+    cd aiogram-starter
+    ```
+
 
 4. Activate the virtual environment:
 
@@ -64,7 +66,7 @@
     - For Linux or macOS:
 
         ```
-        source .venv/bin/activate
+        source ../venv/bin/activate
         ```
 
 5. Install the required dependencies using `pip`:
