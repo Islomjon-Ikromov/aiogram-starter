@@ -14,4 +14,6 @@ pybabel extract --input-dirs=. -o locales/messages.pot
 pybabel update -d locales -D messages -i locales/messages.pot
 pybabel compile -d locales -D messages
 
+alembic revision --autogenerate -m "initial"
+alembic upgrade head
 """

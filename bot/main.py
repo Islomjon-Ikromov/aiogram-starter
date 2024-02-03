@@ -12,9 +12,11 @@ from bot.db import database, models
 
 scheduler = AsyncIOScheduler()
 
-dp = Dispatcher()
-bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
-
+try:
+    dp = Dispatcher()
+    bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
+except Exception as e:
+    print(e)
 router = Router()
 i18n = I18n(path=LOCALES_DIR, default_locale="uz", domain=I18N_DOMAIN)
 md = SimpleI18nMiddleware(i18n)
