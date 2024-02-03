@@ -32,7 +32,7 @@
 └── requirements.txt
 ```
 
-# Setting up the project without Docker
+# Setting up the project
 
 1. Clone the repository from GitHub.
     ```
@@ -80,8 +80,10 @@
     BOT_TOKEN = ""
     BOT_USERNAME = ""
     BOT_LINK = ""
-
-    DATABASE_HOSTNAME = ""
+    ```
+   Not required this config
+    ```
+    DATABASE_HOSTNAME = "" 
     DATABASE_PORT = ""
     DATABASE_USERNAME = ""
     DATABASE_PASSWORD = ""
@@ -91,5 +93,9 @@
 7. Start the bot:
 
     ```
-    python3 run.py | python run.py
+    python3 run.py
     ```
+   or
+   ```
+   python3 run.py
+   ```
