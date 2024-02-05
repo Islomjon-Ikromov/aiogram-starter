@@ -41,12 +41,6 @@ async def set_commands(lang: str = "uz"):
     await bot.set_my_commands(commands)
 
 
-def register_commands():
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    loop.run_until_complete(set_commands(lang='uz'))
-
-
 def set_schedules():
     # scheduler.add_job(function_name, 'interval', minutes=10)
     scheduler.start()

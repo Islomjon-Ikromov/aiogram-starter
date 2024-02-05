@@ -4,7 +4,7 @@ from bot.main import _
 
 def reply_back_btn(lang: str):
     keyboard = [
-        [KeyboardButton(text="⬅️ " + _('back', locale=lang))]
+        [KeyboardButton(text=_('back', locale=lang))]
     ]
     markup = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=keyboard, one_time_keyboard=True)
 
@@ -13,7 +13,7 @@ def reply_back_btn(lang: str):
 
 def inline_back_btn(lang: str):
     keyboard = [
-        [InlineKeyboardButton(text="⬅️ " + _('back', locale=lang), callback_data="back")]
+        [InlineKeyboardButton(text=_('back', locale=lang), callback_data="back")]
     ]
     markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
 
