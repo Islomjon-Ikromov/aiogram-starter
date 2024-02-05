@@ -4,7 +4,7 @@ DEBUG = True
 
 if DEBUG:
     # demo
-    BOT_TOKEN = "6987000669:AAE2hh5NPdZvlduFo732Kn16ednbVEgJg9k"
+    BOT_TOKEN = "6987000669:AAElTWayIN3kPvlizpA7mIbnP7vd4HaOkno"
     BOT_USERNAME = "@username"
     BOT_LINK = "https://t.me/username"
 

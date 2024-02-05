@@ -89,12 +89,25 @@
     DATABASE_PASSWORD = ""
     DATABASE_NAME = ""
     ```
+7. Set up the database using alembic by running the following command:
 
-7. Start the bot:
+    - makemigrations:
 
-    ```
+        ```
+        alembic revision --autogenerate -m "initial"
+        ```
+
+    - migrate:
+
+        ```
+        alembic upgrade head
+        ```
+
+8. Start the bot:
+
+   ```
     python3 run.py
-    ```
+   ```
    or
    ```
    python3 run.py

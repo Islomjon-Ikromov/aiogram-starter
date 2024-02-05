@@ -71,6 +71,9 @@ class DatabaseHandler(logging.Handler):
 
 
 async def main_polling() -> None:
+    # delete webhook for make sure
+    await bot.delete_webhook()
+
     # set logging
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     db_handler = DatabaseHandler()
