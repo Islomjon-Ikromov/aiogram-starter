@@ -1,9 +1,10 @@
 import asyncio
 
-from bot.main import main
+from bot.main import main_polling, main_webhook
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main_polling())
+    # main_webhook()
 
 """
 pybabel extract --input-dirs=. -o locales/messages.pot
